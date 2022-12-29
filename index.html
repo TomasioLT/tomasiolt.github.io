@@ -1,1 +1,310 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>W3.CSS Template</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src="https://kit.fontawesome.com/882854fcb9.js" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="/assets/style.css">
+</head>
+<body>
+
+<!-- Navbar Header -->
+<div class="w3-top">
+  <div class="w3-bar w3-white w3-card" id="myNavbar">
+    <a class="w3-bar-item w3-button w3-hover-black w3-hide-medium w3-hide-large w3-right" href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
+      <i class="fa fa-bars"></i>
+    </a>
+    <a href="/index.html#home" class="w3-bar-item w3-button">Išgelbėjimo Šviesa</a>
+    <div class="w3-right">
+      <div class="w3-dropdown-hover w3-hide-small w3-white">
+        <button class="w3-button">Apie mus <i class="fa-sharp fa-solid fa-chevron-down"></i></button>
+        <div class="w3-dropdown-content w3-bar-block w3-border">
+          <a href="/index.html#about" class="w3-bar-item w3-button">Apie mus</a>
+          <a href="/index.html#serve" class="w3-bar-item w3-button">Tarnystės</a>
+          <a href="/index.html#faifth" class="w3-bar-item w3-button">Tikėjimas</a>
+          <a href="/partners.html" class="w3-bar-item w3-button">Partneriai</a>
+          <a href="/index.html#contact" class="w3-bar-item w3-button">Kontaktai</a>
+        </div>
+      </div>
+      <a href="/index.html#questions" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-th"></i> Turi Klausimų?</a>
+      <a href="#prayer" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-user"></i> Malda</a>
+      <a href="#give" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-user"></i> Aukoti</a>
+    </div>
+  </div>
+
+  <!-- Navbar on small screens -->
+  <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium">
+    <a href="/index.html#questions" class="w3-bar-item w3-button" onclick="toggleFunction()">Turi Klausimų?</a>
+
+    <a href="#prayer" class="w3-bar-item w3-button" onclick="toggleFunction()">Malda</a>
+    <a href="#give" class="w3-bar-item w3-button" onclick="toggleFunction()">Aukoti</a>
+    <div class="w3-bar-item w3-button" onclick="myAccFunc()">
+      Apie mus <i class="fa fa-caret-down"></i>
+    </div>
+    <div id="demoAcc" class="w3-hide w3-white w3-card-4">
+      <a href="/index.html#about" class="w3-bar-item w3-button" onclick="toggleFunction()">Apie mus</a>
+      <a href="/index.html#serve" class="w3-bar-item w3-button" onclick="toggleFunction()">Tarnystės</a>
+      <a href="/index.html#faifth" class="w3-bar-item w3-button" onclick="toggleFunction()">Tikėjimas</a>
+      <a href="/partners.html" class="w3-bar-item w3-button" onclick="toggleFunction()">Partneriai</a>
+    </div>
+  </div>
+
+  <!-- Progress bar -->
+  <div class="progress-container">
+    <div class="progress-bar" id="myBar"></div>
+  </div> 
+</div>
+
+<!-- First Parallax Image with Logo Text -->
+<div class="bgimg-1 w3-display-container w3-opacity-min" id="home">
+  <div id="logo-img">
+    <img src="/assets/img/main-logo-text.png" alt="" >
+  </div>
+  <!-- <div class="w3-display-middle" style="white-space:nowrap;">
+    <span class="w3-center w3-padding-large w3-black w3-xlarge w3-wide w3-animate-opacity">MY <span class="w3-hide-small">WEBSITE</span> LOGO</span>
+  </div> -->
+</div>
+
+<!-- Container (About Section) -->
+<div class="w3-content w3-container w3-padding-64" id="about">
+  <h2 class="w3-center w3-card w3-padding">Kodėl bažnyčia vadinasi „Išgelbėjimo Šviesa“?</h2>
+  <p class="w3-justify">Bažnyčia „Išgelbėjimo Šviesa“ įkurta Klaipėdoje 1995 metais. Priklausome „Lietuvos Evangelinio Tikėjimo Krikščionių Sąjungai“ (LRETKS, Sekmininkai), kurią sudaro 23 bendruomenės. 1918 metais įkurta pirmoji sekmininkų bažnyčia Lietuvoje. Sąjunga priklauso „Pasaulinei Dievo draugijos Asamblėjai“ (World Assemblies of God Fellowship).</p>
+  <p class="w3-justify">Bažnyčia „Išgelbėjimo Šviesa“ įkurta Klaipėdoje 1995 metais. Priklausome „Lietuvos Evangelinio Tikėjimo Krikščionių Sąjungai“ (LRETKS, Sekmininkai), kurią sudaro 23 bendruomenės. 1918 metais įkurta pirmoji sekmininkų bažnyčia Lietuvoje. Sąjunga priklauso „Pasaulinei Dievo draugijos Asamblėjai“ (World Assemblies of God Fellowship).
+    Kodėl „Išgelbėjimo Šviesa“? Biblijoje parašyta (Jono 8:12): „Jėzus vėl prabilo: "Aš – pasaulio šviesa. Kas seka manimi, nebevaikščios tamsybėse, bet turės gyvenimo šviesą.“ Išgelbėjimą įmanoma gauti tik tikėjimu (ne darbais) į Jėzų Kristų, todėl ir skelbiame šį išgelbėjimo kelią, skelbiame šiam pasauliui Kristų.</p>
+  <p class="w3-hover">Kuo mes Tikime? ➜</p>
+</div>
+
+
+
+
+<div class="w3-container w3-center w3-brown w3-text-white w3-padding">
+
+  <h1 class="w3-center">Mūsų vizija: <span class="w3-hide-small"> Skelbti <i class="fa-solid fa-arrow-right"></i> Atstatyti <i class="fa-solid fa-arrow-right"></i> Paruošti</h1></span>
+
+  <div class="w3-third w3-section">
+    <span class="w3-xxlarge">Skelbti</span><br>
+    <span class="w3-xlarge">Išgelbėjimą, Kristų, Evangeliją</span><br>
+  </div>
+  <div class="w3-third w3-section">
+    <span class="w3-xxlarge">Atstatyti:</span><br>
+    <span class="w3-xlarge">Sužeistas širdis ir gyvenimus</span><br>
+  </div>
+  <div class="w3-third w3-section">
+    <span class="w3-xxlarge">Paruošti</span><br>
+    <span class="w3-xlarge">Dievo karalystės tarnautojus</span><br>
+  </div>
+  
+</div>
+
+
+<!-- Tarnystes ID -->
+<div class="w3-row w3-padding-64 w3-auto" id="serve" style="width: 90%;">
+  <h1 class="w3-center w3-card w3-container w3-margin-bottom" style="width: 100%;">Tarnystės</h1>
+  
+  <div class="w3-padding w3-row">
+    <img src="/assets/img/service1.png" class="w3-image w3-half w3-padding">
+    <div class="w3-half w3-padding w3-center w3-cell-middle">
+      <h1>Ateik Sekmadienį</h1>
+      <h3>Tarnaudami vienas kitam Dievo duotomis dovanomis keičiamės į Kristaus panašumą.</h3>
+      <h4>Sekmadieniais 11:00–14:00</h4>
+    </div>
+  </div>
+  <div class="w3-row w3-padding w3-right">
+    <img src="/assets/img/service2.png" class="w3-image w3-half w3-padding">
+    <div class="w3-half w3-padding w3-center w3-cell-middle">
+      <h1>Melskis bendroje maldoje</h1>
+      <h3>Meldžiamės, ieškom Jo valios, stovim už tuos kuriems sunku, nes daug gali karšta teisiojo malda.</h3>
+      <h4>Ketvirtadieniais 18:30–20:00</h4>
+    </div>
+  </div>
+  <div class="w3-row w3-padding">
+    <img src="/assets/img/service3.png" class="w3-image w3-half w3-padding">
+    <div class="w3-half w3-padding w3-center w3-cell-middle">
+      <h1>Biblijos studijos</h1>
+      <h3>Kiekvieną mėnesį studijuojam naują temą. Užduodam klausimus. Diskutuojam.</h3>
+      <h4>Antradieniais 18:30–20:00 <br> Jonas – 8 698 21303</h4>
+    </div>
+  </div>
+  <div class="w3-row w3-padding">
+    <img src="/assets/img/service4.png" class="w3-image w3-half w3-padding">
+    <div class="w3-half w3-padding w3-center w3-cell-middle">
+      <h1>Prisijunk prie jaunimo</h1>
+      <h3>Siekiame stiprinti tikėjimą Jėzumi ir krikščionišką pasaulėžiūrą. Todėl daug bendraujame, šlovinam Dievą, meldžiamės, planuojam renginius, keliaujam, nagrinėjam Bibliją, palaikom vienas kitą! </h3>
+      <h4>Penktadieniais 18:00–21:00 <br> Rima – 8 678 44935</h4>
+    </div>
+  </div>
+  <div class="w3-row w3-padding">
+    <img src="/assets/img/service5.png" class="w3-image w3-half w3-padding">
+    <div class="w3-half w3-padding w3-center w3-cell-middle">
+      <h1>Dalinkis moterų maldoje</h1>
+      <h3>Pastoviu bendravimu, malda ir palaikymu, padedame moterims išsilaisvinti nuo dvasinių žaizdų ir atsistoti ant kojų.</h3>
+      <h4>Ketvirtadieniais 17:00–18:30 <br> Natalja – 8 618 32252</h4>
+    </div>
+  </div>
+  <div class="w3-row w3-padding">
+    <img src="/assets/img/service6.png" class="w3-image w3-half w3-padding">
+    <div class="w3-half w3-padding w3-center w3-cell-middle">
+      <h1>Tapk laisvas blaivybės klube</h1>
+      <h3>Konsultuojame ir padedame priklausomybę turintiems žmonėms integruotis atgal į visuomenę, suteikiame apgyvendinimą, padedame įsidarbinti.</h3>
+      <h4>Trečiadieniais 18:30–19:30 Svetlana – 8 655 99907 <br> Adaptacijos grupė: Andrius – 8 605 06446</h4>
+    </div>
+  </div>
+</div>
+
+
+
+<!-- Questions ID -->
+<div class="w3-row w3-auto w3-center w3-padding-32" id="questions">
+  <h1>Kaip išsigelbėti ir gyventi amžinai?</h1>
+  <div class="w3-container w3-half">
+    <blockquote class="w3-panel w3-card  w3-auto">
+      <h5 class="w3-text-khaki">Mes visi esam nusidėję iš prigimties ir savo pasirinkimais:</h5>
+      <p class="w3-large"><i>„nes visi nusidėjo ir stokoja Dievo šlovės“ </i></p>
+      <p>Romiečiams 3:23</p>
+    </blockquote>
+  </div>
+  <div class="w3-container w3-half">
+    <blockquote class="w3-panel w3-card w3-auto">
+      <h5 class="w3-text-khaki">Mes priimame amžinąjį gyvenimą, kaip dovaną:</h5>
+      <p class="w3-large"><i>„Atpildas už nuodėmę – ­mirtis, o Dievo dovana – ­amžinasis gyvenimas per Jėzų Kristų, mūsų Viešpatį“  </i></p>
+      <p>Romiečiams 6:23</p>
+    </blockquote>
+  </div>
+  <div class="w3-container w3-half">
+    <blockquote class="w3-panel w3-card w3-auto">
+      <h5 class="w3-text-khaki w3-lar">Dievas parodė Savo meilę mums, Jo priešams:</h5>
+      <p class="w3-large"><i>„O Dievas mums parodė savo meilę tuo, kad Kristus mirė už mus, kai tebebuvome nusidėjėliai“</i></p>
+      <p>Romiečiams 5:8</p>
+    </blockquote>
+  </div>
+  <div class="w3-container  w3-half">
+    <blockquote class="w3-panel w3-card w3-auto">
+      <h5 class="w3-text-khaki">Mūsų užtikrintumas išgelbėjime – Jėzus Kristus:</h5>
+      <p class="w3-large"><i>„juk “kiekvienas, kuris šaukiasi Viešpaties vardo, bus išgelbėtas”.”</i></p>
+      <p>Romiečiams 10:13</p>
+    </blockquote>
+  </div>
+  <div class="w3-container">
+    <blockquote class="w3-panel w3-card w3-auto">
+      <h5 class="w3-text-khaki">Mes turime pasitikėti ir pasiduoti Jėzui Kristui, kaip Viešpačiui:</h5>
+      <p class="w3-large"><i>„Jeigu lūpomis išpažinsi Viešpatį Jėzų ir širdimi tikėsi, kad Dievas Jį prikėlė iš numirusių, būsi išgelbėtas.
+        Nes širdimi tikima, ir taip įgyjamas teisumas, o lūpomis išpažįstama, ir taip įgyjamas išgelbėjimas.“</i></p>
+      <p>Romiečiams 10: 9-10</p>
+    </blockquote>
+  </div>
+</div>
+
+<!-- Faifth ID -->
+<div class="w3-row w3-auto w3-center w3-padding-24" id="faifth">
+  <h1>Mūsų tikėjimo pagrindai</h1>
+  <div class="w3-container w3-half ">
+    <h4><b>1.</b> Į Vienintelį Tikrąjį Dievą, kuris apsireiškė žmonėms, kaip esantis Trijuose Asmenyse: Dievas Tėvas, Dievas Sūnus, Dievas Šventoji Dvasia. <br> <i>Pak. Įst. 6:4, Mt. 28:19, 1 Jn.5:7</i></h4>
+  </div>
+  <div class="w3-container w3-half ">
+    <h4><b>2.</b>Kad 66 kanono knygos, Biblija, yra Šventi Dievo įkvėpti, vieninteliai neklaidingi Raštai. <br><i> 2 Pet. 1:21; 2 Tim. 3:16-17</i></h4>
+  </div>
+  <div class="w3-container  ">
+    <h4><b>3.</b> Į Jėzaus Kristaus nekaltą prasidėjimą, nenuodėmingą gyvenimą, stebuklus, kuriuos Jis padarė, Jo atperkamąją mirtį, prisikėlimą kūne, įžengimą į Dangų, užtarimą Tėvo akivaizdoje, Jo antrąjį atėjimą, kaip palaimintą viltį visų tų, kurie įtikėjo Jėzų Kristų. <br> <i>Iz. 7:14; Mt. 1:23; Jn. 20:30; Žyd. 7:25-26; 1 Kor. 15:3-4; Ap.d. 1:9-11; Žyd. 9:24; 1 Tes. 4:13-18</i></h4>
+  </div>
+  <div class="w3-container w3-half ">
+    <h4><b>4.</b> Kad žmogus yra sukurtas Dievo; vėliau nusidėjo per nepaklusnumą Jam. 
+      <i>Pr. 1:26-27; Pr. 3:17; Rom. 5:12</i></h4>
+  </div>
+  <div class="w3-container w3-half ">
+    <h4><b>5.</b> Kad išgelbėjimas žmogui suteikiamas dovanai, tikėjimu į Jėzų Kristų, kuris atpirko mus iš nuodėmių. 
+      <i>Ef. 2:8; Tit. 3:5; 1 Kor. 15:3-4; Gal. 2:16</i></h4>
+  </div>
+  <div class="w3-container w3-half ">
+    <h4><b>6.</b> Kad žmogaus atgimimas iš aukšto vyksta per Dievo Žodžio priėmimą ir tikėjimą į Jėzų Kristų, veikiant Šventajai Dvasiai. <i>Jok. 1:18; 1 Jn. 5:10-13; Jn. 3:5-6</i></h4>
+  </div>
+  <div class="w3-container w3-half ">
+    <h4><b>7.</b> Į bažnyčią sudarytą iš visų išgelbėtų žmonių tikėjimu į Jėzų Kristų. Bažnyčia yra Kristaus kūnas, o Kristus yra bažnyčios galva. 
+      <i>Mt. 16:18; Apr. 5:9-10; Ef. 1:22-23; Ef. 2:20-22</i></h4>
+  </div>
+  <div class="w3-container w3-half ">
+    <h4><b>8.</b> Kad krikštas atliekamas pilnu panardinimu į vandenį vardan Tėvo ir Sūnaus ir Šventosios Dvasios.<i> Mt. 3:16-17; Mt. 28:19</i></h4>
+  </div>
+  <div class="w3-container w3-half ">
+    <h4><b>9.</b> Krikštą į Šventąją Dvasią su kitų kalbų ženklu. 
+      <i>Apd. 2:2-4; Apd. 10:44-46; Apd. 11:14-16; Apd. 19:6</i>
+      </h4>
+  </div>
+  <div class="w3-container w3-half ">
+    <h4><b>10.</b> Į Šventosios Dvasios dovanų veikimą, jo Bažnyčioje, kaip neatšaukiamą Dievo nuostatą.
+      <i>1 Kor. 12:4-11; Ef. 4:7-16</i>
+     </h4>
+  </div>
+  <div class="w3-container w3-half ">
+    <h4><b>11.</b> Kiekvienas kuris įtikėjo turi būti Kristaus mokiniu, atnaujindamas protą ir panašėdamas į Jo charakterį.
+      <i>1 Pet. 1:14-16; Žyd. 12:14; 1 Tes. 4:1-7; Mt 28:19-20</i></h4>
+  </div>
+  <div class="w3-container w3-half ">
+    <h4><b>12.</b> Į dieviškąjį ligonių išgydymą, pagal jų tikėjimą ir Dievo valią. 
+      <i>Mt. 8:13; Jok. 5:13-16; Iz. 53:4-5; Mt. 8:16-17</i></h4>
+  </div>
+  <div class="w3-container w3-half ">
+    <h4><b>13.</b> Viešpaties vakarienė yra vykdoma Jėzaus Kristaus atminimui. 
+      <i>Mt. 26:26-29; 1Kor. 11:23-32</i></h4>
+  </div>
+  <div class="w3-container w3-half">
+    <h4><b>14.</b> Į Kristaus Antrąjį Atėjimą, Bažnyčios paėmimą, mirusiųjų prisikėlimą, Paskutinį teisiųjų ir neteisiųjų Dievo Teismą. 
+      <i>Apr. 20:1-6; Apr 20:10-15</i></h4>
+  </div>
+</div>
+
+  
+
+
+
+<div class="w3-row w3-black">
+
+</div>
+<!-- Container (Contact Section) -->
+<div class="w3-content w3-container w3-padding-64" id="contact">
+  <h1 class="w3-center">Kontaktai</h1>
+  
+  <div class="w3-row w3-padding-32">
+    <div class="w3-twothird">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d9000.624083221508!2d21.195577!3d55.668887!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xb52f08f9b4ff4f94!2zQmHFvm55xI1pYSDigJ5JxaFnZWxixJdqaW1vIMWgdmllc2HigJw!5e0!3m2!1sen!2slt!4v1672302804353!5m2!1sen!2slt" width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+    <div class="w3-third w3-panel  ">
+      <div class="w3-large w3-margin-bottom w3-left-align w3-cell w3-cell-bottom">
+        <a href="https://goo.gl/maps/VYhUhU5t9jW9beF5A" target="_blank">
+          <i class="fa fa-map-marker fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Klaipėda, Vingio g. 21<br>
+        </a>
+        <i class="fa fa-phone fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> +370 68230509<br>
+        <i class="fa fa-envelope fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> baznycia.klaipeda@gmail.com<br>
+      </div>
+      
+    </div>
+  </div>
+</div>
+
+<!-- Footer -->
+<footer class="w3-center w3-black w3-hover-opacity-off w3-padding">
+  <div class="w3-xlarge" >
+    <a href="https://www.facebook.com/IsgelbejimoSviesa" target="_blank" >
+      <i class="fa fa-facebook-official  w3-hover-opacity"></i>
+    </a>
+    <a href="https://www.instagram.com/isgelbejimo_sviesa/" target="_blank">
+      <i class="fa fa-instagram w3-hover-opacity"></i>
+    </a>
+    <a href="https://t.me/IsgelbejimoSviesa" target="_blank">
+      <i class="fa fa-telegram w3-hover-opacity"></i>
+    </a>
+    <a href="https://www.youtube.com/@IsgelbejimoSviesa" target="_blank">
+      <i class="fa fa-youtube w3-hover-opacity"></i>
+    </a>
+    <p class="w3-large">Visos teisės yra saugomos Išgelbėjimo Šviesa</p>
+  </div>
+</footer>
+ 
+
+<script src="/assets/main.js"></script>
+</body>
+</html>
 
